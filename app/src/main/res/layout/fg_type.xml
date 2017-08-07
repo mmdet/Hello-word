@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:topbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBg"
+    android:orientation="vertical">
+    <com.hhzb.fntalm.view.TopBar
+        android:id="@+id/titletop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_hight"
+        android:background="@color/ColorMain"
+        topbar:titleText="回柜"
+        topbar:leftBackground="@mipmap/fanhui">
+    </com.hhzb.fntalm.view.TopBar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+            <include layout="@layout/layout_order_info" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="请选择柜子类型"
+                style="@style/text_size30_style"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/ColorMain"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/dieshi"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                android:text="叠式"
+                style="@style/text_size30_style"
+                android:gravity="center"
+                android:textColor="@color/ColorWhite"
+                android:background="@drawable/menu_danlv"/>
+            <TextView
+                android:id="@+id/guashi"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                android:text="挂式"
+                style="@style/text_size30_style"
+                android:textColor="@color/ColorWhite"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/menu_danlanse"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

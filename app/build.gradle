@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+    defaultConfig {
+        applicationId "com.hhzb.fntalm"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    testCompile 'junit:junit:4.12'
+    compile project(':SerialPort')
+    //fragment开源库
+    compile 'me.yokeyword:fragmentation:0.10.1'
+    //轮播
+    compile 'com.jude:rollviewpager:1.4.6'
+    //recyleView
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    //侧滑
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile project(':mmdetlib')
+    compile 'org.greenrobot:greendao:3.0.1'
+    //数据库
+    compile 'com.zxy.android:recovery:0.1.4'
+    //程序异常崩溃自动回复框架
+    compile 'com.allenliu.versionchecklib:library:1.0.4'
+    //自动更新框架
+    compile project(':zxinglib')
+    compile project(':tts')
+    compile project(':zzplayerlib')
+    compile files('libs/mcs_sr.jar')
+}
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.0.0'
+    }
+}
+greendao {
+    schemaVersion 3
+    daoPackage 'com.hhzb.fntalm.module.db'
+    targetGenDir 'src/main/java'
+}

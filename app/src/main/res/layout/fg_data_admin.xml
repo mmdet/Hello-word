@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/ColorWhite"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="管理员账号"
+                android:gravity="center"
+                android:textColor="@color/ColorBlack"
+                style="@style/text_size30_style"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="管理员口令账号无需密码"
+                android:gravity="center"
+                style="@style/text_size18_style"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:paddingRight="20dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/addAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加管理员"
+               android:textColor="@color/ColorWhite"
+                android:padding="5dp"
+                android:background="@drawable/menu_fenhong"
+                style="@style/text_size30_style"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ColorWhite"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+        <include layout="@layout/admin_list_item_title"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:topbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBg"
+    android:orientation="vertical">
+    <com.hhzb.fntalm.view.TopBar
+        android:id="@+id/titletop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_hight"
+        android:background="@color/ColorMain"
+        topbar:titleText="卡类型"
+        topbar:leftBackground="@mipmap/fanhui">
+    </com.hhzb.fntalm.view.TopBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"/>
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/ColorWhite"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/buyer_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:gravity="center"
+                            style="@style/text_size30_style"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/thetiptext"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="请选择充值的类型:"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/ColorMain"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        style="@style/text_size30_style"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/id_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:scrollbars="vertical"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="向上滑动显示更多类型"
+                        android:gravity="center"
+                        style="@style/text_size20_style"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/buycard"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="立 即 充 值"
+                        android:gravity="center"
+                        android:textColor="@color/ColorWhite"
+                        android:background="@drawable/btn_buy"
+                        style="@style/text_size30_style"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginBottom="1dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal"
+                    android:gravity="center|bottom">
+
+                    <TextView
+                        android:id="@+id/kefu_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="客服"
+                        style="@style/text_size20_style"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        style="@style/text_size20_style"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/text_size20_style"
+                        android:text="常见问题"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

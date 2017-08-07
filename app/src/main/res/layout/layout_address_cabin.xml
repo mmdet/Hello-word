@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="柜子地址设置"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/ColorBlack"
+        style="@style/text_size30_style"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="不需要设置地址的锁控直接跳过此步骤;\n柜子地址必须唯一，否则无法使用；\n点击设置键后,按下需要设置的锁板开关来响应设置."
+        android:textColor="@color/ColorPrice"
+        android:layout_marginTop="10dp"
+        style="@style/text_size20_style"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入地址A:"
+            style="@style/text_size30_style"/>
+
+        <EditText
+            android:id="@+id/edit_a"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="number"
+            style="@style/text_size30_style"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入地址B:"
+            style="@style/text_size30_style"
+            />
+        <EditText
+            android:id="@+id/edit_b"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="number"
+            style="@style/text_size30_style"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/edit_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:textColor="@color/ColorWhite"
+            android:background="@drawable/btn_buy"
+            style="@style/text_size20_style"/>
+    </LinearLayout>
+</LinearLayout>

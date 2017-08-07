@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FntAlm.iml" filepath="$PROJECT_DIR$/FntAlm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SerialPort/SerialPort.iml" filepath="$PROJECT_DIR$/SerialPort/SerialPort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mmdetlib/mmdetlib.iml" filepath="$PROJECT_DIR$/mmdetlib/mmdetlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tts/tts.iml" filepath="$PROJECT_DIR$/tts/tts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zxinglib/zxinglib.iml" filepath="$PROJECT_DIR$/zxinglib/zxinglib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zzplayerlib/zzplayerlib.iml" filepath="$PROJECT_DIR$/zzplayerlib/zzplayerlib.iml" />
+    </modules>
+  </component>
+</project>

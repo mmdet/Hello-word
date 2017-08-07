@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">门店柜</string>
+
+    <string name="Input_Tip_InputPlease">请输入内容</string>
+    <string name="Input_Tip_InputMobile">请输入手机号码</string>
+    <string name="Input_Tip_InputCount">请输入衣物件数</string>
+    <string name="Input_Tip_InputMobileCode">请输入验证码</string>
+    <string name="Input_Tip_InputPassword">请输入密码</string>
+    <string name="Input_ErrorTip_MobileErr">请输入正确的手机号码</string>
+    <string name="Input_ErrorTip_CountErr">超出衣物数量限制</string>
+</resources>
